@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gozeal</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#378ADD">
+  <link rel="apple-touch-icon" href="icon.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { width: 100%; height: 100%; overflow: hidden; }
+    iframe { width: 100%; height: 100vh; border: none; }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbzJrysIO5x4sdanVgXFHdQiTFw1EJ7Ywrq-MHUAKptS/dev" allowfullscreen></iframe>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
